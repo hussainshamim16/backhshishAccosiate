@@ -69,7 +69,7 @@ section.hero header .navigation ul li{
 /* header close */
 
 section.hero div.center{
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(./images/fornt\ 1.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(./images/back.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -204,15 +204,18 @@ section.about .text a{
 /* services */
 section.services{
     /* border: 1px solid red; */
-    height: 20vh;
+    height: auto;
     text-align: center;
     text-transform: capitalize;
     font-weight: bold;
 }
-section.services h1{font-size: 2rem;}
+section.services h1{font-size: 2rem;
+margin-bottom: 50px;
+}
 section.services .boxer{
     
     height: 100%;
+    flex-wrap:wrap;
     justify-content: space-around;
     color: black;
 }
@@ -221,10 +224,83 @@ section.services .boxer .box{
     padding: 15px 20px;
     text-transform: capitalize;
     font-weight: bold;
-    flex-wrap: wrap;
     cursor: pointer;
     transition-duration: 0.4s;
+    width: 20%;
+    margin-bottom: 20px;
 }
 section.services .boxer .box:hover{
     background-color: lightseagreen;
+}
+/* servicers */
+/* gallery */
+section.gallery{
+    /* border: 2px solid red;     */
+    height: 80vh;
+    
+    margin: 50px 0px;
+}
+section.gallery .images{
+    width: 100%;
+    height: 80%;
+
+    
+
+    justify-content: space-around;
+    align-items: center;
+}
+section.gallery .images img{
+    width: 20%;
+    height: 100%;
+    cursor: pointer;
+}
+/* done gallery */
+/* footer */
+section.footer{
+    background-color: rgb(251, 255, 0);
+    height: 80vh;
+    padding: 10px 20px;
+}
+section.footer .head{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    height: 90%;
+    /* background-color: yellow; */
+
+
+}
+section.footer .head .eamp{
+    /* border: 1px solid red; */
+    width: 40%;
+
+}
+section.footer .head .eamp ul{
+    list-style: none;
+
+}
+section.footer .head .eamp h1{
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+section.footer .head .eamp form{
+/* border: 1px solid red; */
+
+
+}
+section.footer .head .eamp form input{
+padding: 7px 20px ;
+margin: 10px;
+width: 70%;
+text-transform: capitalize;
+
+}
+section.footer .head .eamp form button{
+padding: 7px 20px ;
+margin: 10px;
+width: 40%;
+
+cursor: pointer;
 }
